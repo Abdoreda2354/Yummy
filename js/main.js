@@ -178,7 +178,7 @@ async function startCategory() {
  await displayCategory();
  CategoryMeals();
  }
-$('#Categories').on('click' , function(){
+$('.Categories').on('click' , function(){
     startCategory();
     closeNavBar();
     });
@@ -254,7 +254,7 @@ function displayArea(){
     $('#searchInputs').html(searchInput);
     }
 }
-$('#Area').on('click' , function(){
+$('.Area').on('click' , function(){
     startGetAreaData();
     closeNavBar();
 })
@@ -346,7 +346,7 @@ function displayIngredients(){
     }
 
 }
-$('#Ingredients').on('click' , function(){
+$('.Ingredients').on('click' , function(){
     startGetIngredientsData();
     closeNavBar();
 })
@@ -424,7 +424,7 @@ function displaySearchInputs() {
     $('#searchInputs').html(searchInput);
     $('#homedata').html(data);
 }
-$('#Search').on('click',  function(){
+$('.Search').on('click',  function(){
     displaySearchInputs();
     closeNavBar();
 })
@@ -644,7 +644,7 @@ function displaycontact() {
     
 }
 
-$('#Contact').on('click' , function(){
+$('.Contact').on('click' , function(){
     displaycontact();
     closeNavBar();
 })

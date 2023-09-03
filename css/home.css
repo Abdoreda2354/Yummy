@@ -211,6 +211,4 @@ overflow: hidden;
     align-items: center;
     justify-content: center;
   }
-@media (max-width: 723.9808px) {.container{max-width: 440px!important;}}
-@media (max-width: 576.9808px) {.container{max-width: 340px!important;}}
-@media (max-width: 476.9808px) {.container{max-width: 280px!important;}}
+@media (max-width:576.9808px) {.container{max-width: 500px!important;}}
