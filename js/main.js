@@ -31,7 +31,14 @@ function closeNavBar() {
         }, 100)
     }
 }
+function closenav() {
+    $('.navbarlinks').slideUp(500);
+    
+}
+$('.navbar-toggler').on('click' ,()=>{
+    $('.navbarlinks').slideDown();
 
+})
 $('#open').on('click' , function(){
     openNavBar()
 })
@@ -181,6 +188,7 @@ async function startCategory() {
 $('.Categories').on('click' , function(){
     startCategory();
     closeNavBar();
+    closenav();
     });
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //**************************************************************** 
@@ -257,6 +265,7 @@ function displayArea(){
 $('.Area').on('click' , function(){
     startGetAreaData();
     closeNavBar();
+    closenav();
 })
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //**************************************************************** 
@@ -349,6 +358,7 @@ function displayIngredients(){
 $('.Ingredients').on('click' , function(){
     startGetIngredientsData();
     closeNavBar();
+    closenav();
 })
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //**************************************************************** 
@@ -427,6 +437,7 @@ function displaySearchInputs() {
 $('.Search').on('click',  function(){
     displaySearchInputs();
     closeNavBar();
+    closenav();
 })
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -609,7 +620,7 @@ function displaycontact() {
                                 </div>
                                 <div class="submit  text-center">
 
-                                    <button class="btn btn-outline-danger text-center" disabled id="Submit"> Submit</button>
+                                    <button class="btn btn-danger text-center ps-5 pe-5" disabled id="Submit"> Submit</button>
                                 </div>
                             </div>
                         </div>
@@ -647,6 +658,7 @@ function displaycontact() {
 $('.Contact').on('click' , function(){
     displaycontact();
     closeNavBar();
+    closenav();
 })
 
 
