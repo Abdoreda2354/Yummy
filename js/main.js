@@ -1,6 +1,5 @@
  /// <reference types="../@types/jquery" />
 //**************************************************************** 
-
 //?=============================​‌‌‌‍navBar​======================== 
 
 //**************************************************************** 
@@ -40,8 +39,31 @@ $('#close').on('click' , function(){
     closeNavBar();
 })
 
+//!====================================================================
+let mediaQuery = window.matchMedia("(max-width: 576.9808px)");
+if (mediaQuery.matches) {
+   $('.navbar').removeClass('d-none')
+   $('.sideNaveBar').addClass('d-none')
+} else {
+   $('.navbar').addClass('d-none')
+   $('.sideNaveBar').removeClass('d-none')
 
+}
+function handleMediaQueryChange(mediaQuery) {
+   if (mediaQuery.matches) {
+       $('.navbar').removeClass('d-none')
+       $('.sideNaveBar').addClass('d-none')
+   } else {
+       $('.navbar').addClass('d-none')
+       $('.sideNaveBar').removeClass('d-none')
 
+   }
+ }
+ $(window).on( 'resize',function() {
+    var mediaQuery = window.matchMedia("(max-width: 576.9808px)");
+      handleMediaQueryChange(mediaQuery);
+      mediaQuery.addListener(handleMediaQueryChange);
+  });
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 //**************************************************************** 
