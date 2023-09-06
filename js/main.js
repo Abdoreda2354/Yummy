@@ -587,6 +587,7 @@ let ageInputFocus = false;
 let passwordInputFocus = false;
 let repasswordInputFocus = false;
 function displaycontact() {
+    searchInput= ``;
     data =``
     data= `
     <div class="contact d-flex justify-content-center align-items-center">
@@ -629,6 +630,7 @@ function displaycontact() {
     
     `
     $('#homedata').html(data);
+    $('#searchInputs').html(searchInput);
     $('#Name').on("focus", function()  {
         nameInputFocus = true
     })
